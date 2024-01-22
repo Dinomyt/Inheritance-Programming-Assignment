@@ -12,11 +12,11 @@ Details
 
 >1. For event name, you can define an enumerated data type that contains all available event names. Then in the constructor of DinnerEvent class, assign a proper value from the enumerated data type to the event name based on the numeric event type entered.
 
-2. For menu options, you can also use enumerated data types instead of three final arrays
+>2. For menu options, you can also use enumerated data types instead of three final arrays
 
-3. Program should be well-documented
+>3. Program should be well-documented
 
-4. Submit the repl.it link of the program
+>4. Submit the repl.it link of the program
 
 ## Student Name
 
