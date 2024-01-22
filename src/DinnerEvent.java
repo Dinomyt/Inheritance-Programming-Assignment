@@ -198,6 +198,7 @@ public class DinnerEvent {
                 break;
             default:
                 System.out.println("Invalid Dessert Choice");
+                this.dessertChoice = DessertChoice.NO_DESSERT_SPECIFIED;
         }
     }
 
