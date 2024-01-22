@@ -19,6 +19,6 @@ After all data values are entered, display all of the details for the event, inc
 
 4. Submit the repl.it link of the program
 
-## Student
+## Student Name
 
 - Neng Lao
