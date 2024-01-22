@@ -9,12 +9,10 @@ public class DinnerEvent {
     private SideDishChoice sideDishOneChoice;
     private SideDishChoice sideDishTwoChoice;
     private DessertChoice dessertChoice;
-    private int employeeIndex = 0;
 
-    final String[] entree = {"Grilled Steak", "Grilled Pork", "Grilled Chicken"};
-    final String[] sideDish = {"Shrimp Cocktail", "Onion Soup", "Fries"};
-    final String[] desert = {"Vanilla Ice Cream", "Fruit Cups", "Pie"};
     private Employee[] employees = new Employee[15];
+    //Used to keep track of our current employee count and index for adding new employees
+    private int employeeIndex = 0;
 
     private enum EventTypes {
         WEDDING,
@@ -44,9 +42,10 @@ public class DinnerEvent {
         NO_DESSERT_SPECIFIED
     }
 
+    //DinnerEvent Constructor
     public DinnerEvent(int eventType, String eventName, int guestCount, int entreeChoice, int sideDishOneChoice, int sideDishTwoChoice, int dessertChoice)
     {
-
+        
         this.eventName = eventName;
         this.guestCount = guestCount;
 
@@ -61,8 +60,12 @@ public class DinnerEvent {
 
     public void assignEmployees(int guestCount)
     {
+        //For every 10 additional guests we need 1 more wait staff
         int waitStaffCount = 1 + guestCount / 10;;
+        //For every 25 additional guests we need 1 more bartender
         int bartenderCount = 1 + guestCount / 25;
+
+        //Random 10 first and last names for assigning employees first and last names
         String[] firstNames = {"Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Grace", "Henry", "Ivy", "Jack"};
         String[] lastNames = {"Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor"};
         for (int i = 0; i < waitStaffCount && i < employees.length; i++)
@@ -91,6 +94,7 @@ public class DinnerEvent {
 
     }
     public String assignID() {
+        //Generates a random 5 digit value to assign to an employee
         Random random = new Random();
         return String.valueOf(10000 + random.nextInt(90000));
     }

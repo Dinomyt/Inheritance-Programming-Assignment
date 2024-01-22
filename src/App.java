@@ -6,9 +6,7 @@ public class App {
     public static Scanner scnr = new Scanner(System.in);
     public static void main(String[] args) throws Exception {
 
-
-
-
+        //value intake for our DinnerEvent object
         System.out.println("Enter Event Type (1: Wedding, 2: Birthday, 3: Corporate, 4: Others): ");
         int eventType = scnr.nextInt();
         scnr.nextLine();
@@ -31,8 +29,10 @@ public class App {
         System.out.println("Enter Dessert Choice (1: Vanilla Ice Cream, 2: Fruit Cups, 3: Pie): ");
         int dessertChoice = scnr.nextInt();
 
-
+        //Initialize our DinnerEvent dinnerEvent with the values from earlier
         DinnerEvent dinnerEvent = new DinnerEvent(eventType, eventName, guestCount, entreeChoice, sideDishOneChoice, sideDishTwoChoice, dessertChoice);
+
+        //Prints all the information about the event including the employee information
         dinnerEvent.printInfo();
 
 

@@ -1,6 +1,7 @@
 public class Coordinator extends Employee{
     private final double maxRate = 20.00;
 
+    //Default constructor
     public Coordinator()
     {
         this.payRate = maxRate;

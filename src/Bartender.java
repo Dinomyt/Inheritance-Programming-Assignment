@@ -1,6 +1,7 @@
 public class Bartender extends Employee{
     final double maxRate = 18.00;
 
+    //Default constructor
     public Bartender()
     {
         this.payRate = maxRate;
