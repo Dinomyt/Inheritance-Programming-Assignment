@@ -18,3 +18,6 @@ Details
 ## Student Name
 
 - Neng Lao
+
+## REPL Link
+- https://replit.com/@NengLao/Inheritance-Programming-Assignment
